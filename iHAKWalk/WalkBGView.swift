@@ -14,7 +14,7 @@ import UIKit
  *  color. Also provides paralax effect and blur.
  */
 public class WalkBGView: UIView {
-    enum BackgroundType {
+    public enum BackgroundType {
         case normal, paralax
     }
     
@@ -67,7 +67,7 @@ public class WalkBGView: UIView {
      *  Initialises the object with the provided image, optional WalkView and
      *  background type.
      */
-    init(image: UIImage? = nil, walkView: WalkView? = nil, type: BackgroundType = .normal) {
+    public init(image: UIImage? = nil, walkView: WalkView? = nil, type: BackgroundType = .normal) {
         if let image = image {
             self.imageView = UIImageView(image: image)
             self.paralaxWidth = Double(image.size.width)
@@ -88,7 +88,7 @@ public class WalkBGView: UIView {
      *  Initiales the object with an image created with provided color
      *  and optional WalkView object.
      */
-    init(color: UIColor, walkView: WalkView? = nil) {
+    public init(color: UIColor, walkView: WalkView? = nil) {
         self.imageView = UIImageView(image: color.image().resizableImage(withCapInsets: .zero))
         self.walkView = walkView
         super.init(frame: .zero)
@@ -96,7 +96,7 @@ public class WalkBGView: UIView {
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -157,7 +157,7 @@ public class WalkBGView: UIView {
         view.trailingAnchor.constraint(equalTo: imageView!.trailingAnchor).isActive = true
     }
     
-    func configureTap(_ block: @escaping ((_ bgView: WalkBGView) -> Void)) {
+    public func configureTap(_ block: @escaping ((_ bgView: WalkBGView) -> Void)) {
         self.tapHandler = block
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(walkViewTapped))

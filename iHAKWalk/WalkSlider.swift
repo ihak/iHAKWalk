@@ -20,7 +20,7 @@ protocol SliderDelegate {
  *  A view that takes WalkView and WalkBGView and layout
  *  the slider accordingly.
  */
-class WalkSlider: UIView {
+public class WalkSlider: UIView {
     private lazy var pageControl = UIPageControl(frame: .zero)
     private lazy var scrollView = UIScrollView(frame: .zero)
     private lazy var skipButton = UIButton(type: .custom)
@@ -48,7 +48,7 @@ class WalkSlider: UIView {
         return Double(scrollView.bounds.width)
     }
 
-    init(backgroundView: WalkBGView? = nil, milestones: [UIView]) {
+    public init(backgroundView: WalkBGView? = nil, milestones: [UIView]) {
         self.milestones.append(contentsOf: milestones)
         self.backgroundView = backgroundView
         
@@ -63,7 +63,7 @@ class WalkSlider: UIView {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -180,7 +180,7 @@ class WalkSlider: UIView {
     /**
      *  Adds skip button to the stackview.
      */
-    func addSkipButton() {
+    public func addSkipButton() {
         skipButton.setTitle("Skip", for: .normal)
         skipButton.setTitleColor(.white, for: .normal)
         skipButton.backgroundColor = .clear
@@ -220,7 +220,7 @@ class WalkSlider: UIView {
     /**
      *  Adds page control to the stackview.
      */
-    func addPageControl() {
+    public func addPageControl() {
         pageControl.numberOfPages = milestones.count
         
         pageControl.translatesAutoresizingMaskIntoConstraints = false
@@ -253,14 +253,14 @@ class WalkSlider: UIView {
     /**
      *  Performs custom configurations on page control
      */
-    func configurePageControl(_ block: (_ pageControl: UIPageControl) -> Void) {
+    public func configurePageControl(_ block: (_ pageControl: UIPageControl) -> Void) {
         block(pageControl)
     }
     
     /**
      *  Performs custom configurations on skip button.
      */
-    func configureSkipButton(_ block: (_ button: UIButton) -> Void) {
+    public func configureSkipButton(_ block: (_ button: UIButton) -> Void) {
         block(skipButton)
     }
     
@@ -274,7 +274,7 @@ class WalkSlider: UIView {
 }
 
 extension WalkSlider: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    private func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print(scrollView.contentOffset)
         guard scrollView.bounds.width > 0 else {
             print("Error: Scrollview width is <= zero.")

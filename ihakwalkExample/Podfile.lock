@@ -1,0 +1,16 @@
+PODS:
+  - iHAKWalk (0.0.1)
+
+DEPENDENCIES:
+  - iHAKWalk (from `../`)
+
+EXTERNAL SOURCES:
+  iHAKWalk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iHAKWalk: 63d00db30ecbe1659d3c6278a969d75cecfc9c74
+
+PODFILE CHECKSUM: 75e591d31821603455bfca732d5c2f61960eb276
+
+COCOAPODS: 1.5.3

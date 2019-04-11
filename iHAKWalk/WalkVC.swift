@@ -8,10 +8,10 @@
 
 import UIKit
 
-class WalkVC: UIViewController {
+public class WalkVC: UIViewController {
     var walkSlider: WalkSlider!
     
-    convenience init(walkSlider: WalkSlider) {
+    public convenience init(walkSlider: WalkSlider) {
         self.init()
         self.walkSlider = walkSlider
         self.walkSlider.skipButtonAction { (_) in
@@ -19,7 +19,7 @@ class WalkVC: UIViewController {
         }
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

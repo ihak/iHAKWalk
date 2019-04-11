@@ -13,7 +13,7 @@ import UIKit
  *  checkout the methods exposed by this class.
  */
 
-class WalkView: UIView {
+public class WalkView: UIView {
     private var title: String?
     private var descriptionText: String?
     private var image: UIImage?
@@ -25,19 +25,19 @@ class WalkView: UIView {
     private var imageView: UIImageView?
     private var sequence: [DisplayItem]
     
-    typealias Configuration = (_ walkView: WalkView, _ title: UILabel?,_ description: UILabel?,_ image: UIImageView?) -> Void
-    typealias TapHandler = ((_ bgView: WalkView) -> Void)
+    public typealias Configuration = (_ walkView: WalkView, _ title: UILabel?,_ description: UILabel?,_ image: UIImageView?) -> Void
+    public typealias TapHandler = ((_ bgView: WalkView) -> Void)
     
     private var tapHandler: TapHandler?
     
-    enum DisplayItem {
+    public enum DisplayItem {
         case title, description, image
     }
     
     private var defaultConfiguration: Configuration
     private var configuration: Configuration?
     
-    init(title:String? = nil,
+    public init(title:String? = nil,
          descriptionText:String? = nil,
          image:UIImage? = nil,
          sequence: [DisplayItem] = [.title, .description, .image],
@@ -66,7 +66,7 @@ class WalkView: UIView {
         configure()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -97,7 +97,7 @@ class WalkView: UIView {
      *  Adds custom spacing after a view in stackview.
      *  Call this method in configuration block to make it work.
      */
-    func addCustomSpacing(spacing: Double, after view: UIView) {
+    public func addCustomSpacing(spacing: Double, after view: UIView) {
         self.stackView.setCustomSpacing(CGFloat(spacing), after: view)
     }
     
@@ -162,7 +162,7 @@ class WalkView: UIView {
         stackView.bottomAnchor.constraint(lessThanOrEqualTo: margins.bottomAnchor, constant: 10.0).isActive = true
     }
     
-    func configureTap(_ block:TapHandler?) {
+    public func configureTap(_ block:TapHandler?) {
         self.tapHandler = block
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(walkViewTapped))

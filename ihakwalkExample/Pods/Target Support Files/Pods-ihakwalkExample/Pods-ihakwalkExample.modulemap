@@ -1,0 +1,6 @@
+framework module Pods_ihakwalkExample {
+  umbrella header "Pods-ihakwalkExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

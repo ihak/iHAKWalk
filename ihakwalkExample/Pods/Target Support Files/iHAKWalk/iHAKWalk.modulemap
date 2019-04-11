@@ -1,0 +1,6 @@
+framework module iHAKWalk {
+  umbrella header "iHAKWalk-umbrella.h"
+
+  export *
+  module * { export * }
+}

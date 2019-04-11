@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CD6DE0094D794E8AFD1F2BFC64A0B91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		106D0F90B82133DB558464511A59FE29 /* WalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D6202369218E60B55B4EF039CA55EF /* WalkView.swift */; };
+		1D22F20D5578EA34701D0AED01FCAF26 /* iHAKWalk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE865073456A9B8C139256E325461759 /* iHAKWalk-dummy.m */; };
+		36031A86CDE007086D50572ECEC310C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		4223C2764936FBB1EADD90905C14C694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		4660F7B626549A7295492D7E277AB682 /* WalkSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A70CD4400B391030972590DA7E3DD6 /* WalkSlider.swift */; };
+		4D822990C55582CD423E9805C7FB0D68 /* Pods-ihakwalkExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C39AA8645A1F0249693082C1022A45 /* Pods-ihakwalkExampleTests-dummy.m */; };
+		4EABDDCF943C7A9D173E9C259EE57825 /* Pods-ihakwalkExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6808D8AF541F017EB0D5C9671F1311DE /* Pods-ihakwalkExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53D0FA914377E4DAF76A85E0ADA71385 /* iHAKWalk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE9835D1B3135B9E48675DBFC6B1AB1 /* iHAKWalk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		542914BBE8F6AF437BB82FA17BF6BBFC /* Pods-ihakwalkExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A226F5A46DEA73F67C3C0E83E862B2 /* Pods-ihakwalkExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D96042D867C9E088B712BBDABBB0F5D /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FAE7D6637CCEF12A62A70620DDE8C /* UIColor+Image.swift */; };
+		99503C499D275CA08141F4B2F7C1E7B0 /* WalkBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EE320955162D9C09F9D76C1A411D67 /* WalkBGView.swift */; };
+		E576855CCD7818784A6403AAF419DBDA /* WalkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD017B8494423F4B0C7DF1776DC8B0 /* WalkVC.swift */; };
+		F412EDEFDDC7819B78F2C29C01167A76 /* Pods-ihakwalkExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FF264230656DFEA50B96A101AB1619 /* Pods-ihakwalkExample-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		022B346F68B97D2FC5195D233E7740A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA2E880FAC6C95CC0D7DC34574CE01A;
+			remoteInfo = iHAKWalk;
+		};
+		4C7A9E624485F281CBB6D27133B9394A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9DFC6B01844D2A3016A4B9236FB02D3;
+			remoteInfo = "Pods-ihakwalkExample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07EE320955162D9C09F9D76C1A411D67 /* WalkBGView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalkBGView.swift; path = iHAKWalk/WalkBGView.swift; sourceTree = "<group>"; };
+		0E04C35B22D286D88BD60BD2123562D2 /* iHAKWalk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iHAKWalk.xcconfig; sourceTree = "<group>"; };
+		1B70E99F0F2DDBB8287345F75E5D7700 /* iHAKWalk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iHAKWalk.modulemap; sourceTree = "<group>"; };
+		28003E46598A7A975C220F946F6B6418 /* Pods-ihakwalkExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ihakwalkExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A17E00E2D8CB4D9ECF9AE1D3FDC5237 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B84034759D995C6F7DC8DD63C47072A /* iHAKWalk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iHAKWalk-prefix.pch"; sourceTree = "<group>"; };
+		3E8FAE7D6637CCEF12A62A70620DDE8C /* UIColor+Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
+		42A226F5A46DEA73F67C3C0E83E862B2 /* Pods-ihakwalkExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ihakwalkExample-umbrella.h"; sourceTree = "<group>"; };
+		52C39AA8645A1F0249693082C1022A45 /* Pods-ihakwalkExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ihakwalkExampleTests-dummy.m"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		61F8FB158FE098E13AEB9FAE6D93FF4F /* Pods-ihakwalkExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ihakwalkExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		67A70CD4400B391030972590DA7E3DD6 /* WalkSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalkSlider.swift; path = iHAKWalk/WalkSlider.swift; sourceTree = "<group>"; };
+		6808D8AF541F017EB0D5C9671F1311DE /* Pods-ihakwalkExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ihakwalkExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		6AA7DC9CD5387596B5E7E8372AD1AB1D /* Pods-ihakwalkExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ihakwalkExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		74D6202369218E60B55B4EF039CA55EF /* WalkView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalkView.swift; path = iHAKWalk/WalkView.swift; sourceTree = "<group>"; };
+		7AE9835D1B3135B9E48675DBFC6B1AB1 /* iHAKWalk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iHAKWalk-umbrella.h"; sourceTree = "<group>"; };
+		7D594FF566D57DB9ADC2ABC66E55F8DC /* Pods-ihakwalkExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ihakwalkExampleTests-resources.sh"; sourceTree = "<group>"; };
+		834113E4DBEF66AEC2C0C6184270DBAB /* Pods-ihakwalkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ihakwalkExample.debug.xcconfig"; sourceTree = "<group>"; };
+		864AAB9738135465154ECC3867AAAF4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9963F4BB96C4CD0783D70F6EAE04CC1D /* Pods-ihakwalkExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ihakwalkExampleTests-frameworks.sh"; sourceTree = "<group>"; };
+		99FF264230656DFEA50B96A101AB1619 /* Pods-ihakwalkExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ihakwalkExample-dummy.m"; sourceTree = "<group>"; };
+		A1127887AB3E9843FFB6D8B868B8EA25 /* Pods-ihakwalkExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ihakwalkExample-resources.sh"; sourceTree = "<group>"; };
+		A999915B0CE8A57D6A8036A35A1B7BA7 /* Pods-ihakwalkExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ihakwalkExample-frameworks.sh"; sourceTree = "<group>"; };
+		A9D77D7499C071D5620060A30D43CA0E /* Pods-ihakwalkExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ihakwalkExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AC7406CD12CF9D6AB81EC6D59848D815 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B3854F87C8CA0C377DE80F4F290B8B9B /* Pods_ihakwalkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ihakwalkExample.framework; path = "Pods-ihakwalkExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61757AA672622D3B9C031ED7143F30E /* Pods-ihakwalkExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ihakwalkExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B87F75FBF927179CDEAF8DDFF02EAD2F /* Pods-ihakwalkExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ihakwalkExampleTests.modulemap"; sourceTree = "<group>"; };
+		BBCF138A0DB547DB6FF7C68FA36F7A6D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C1BAD8BB4B2A34FF8C8203BE42305499 /* Pods-ihakwalkExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ihakwalkExample.modulemap"; sourceTree = "<group>"; };
+		CEFF82AB5CCA03CC7D20531891891038 /* iHAKWalk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = iHAKWalk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DE865073456A9B8C139256E325461759 /* iHAKWalk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iHAKWalk-dummy.m"; sourceTree = "<group>"; };
+		DEE9E22D463ECC11F5DFEC1B73427B15 /* Pods_ihakwalkExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ihakwalkExampleTests.framework; path = "Pods-ihakwalkExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6DD017B8494423F4B0C7DF1776DC8B0 /* WalkVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalkVC.swift; path = iHAKWalk/WalkVC.swift; sourceTree = "<group>"; };
+		ECCCF5F23E862DAB725EA30E2A027A29 /* Pods-ihakwalkExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ihakwalkExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EF198EB58F6A304E041D9EFB6CE7B436 /* Pods-ihakwalkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ihakwalkExample.release.xcconfig"; sourceTree = "<group>"; };
+		F48B26245619FAFAA532EB7DAF1BEA6D /* iHAKWalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iHAKWalk.framework; path = iHAKWalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1AF3BD95C77CCC19DBE47575E4638C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02DA4E26D230184186C3DFA216CEF280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD6DE0094D794E8AFD1F2BFC64A0B91 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41B85BF02F1C63AE46B1B7D28FA968C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4223C2764936FBB1EADD90905C14C694 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8498669369BBB94735A71A587B49A81A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36031A86CDE007086D50572ECEC310C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11EC1BD0381A1B8B06526647EF844E01 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E8FAE7D6637CCEF12A62A70620DDE8C /* UIColor+Image.swift */,
+			);
+			name = Extensions;
+			path = iHAKWalk/Extensions;
+			sourceTree = "<group>";
+		};
+		1B8C42D8F4CF60C309609326CD866115 /* iHAKWalk */ = {
+			isa = PBXGroup;
+			children = (
+				07EE320955162D9C09F9D76C1A411D67 /* WalkBGView.swift */,
+				67A70CD4400B391030972590DA7E3DD6 /* WalkSlider.swift */,
+				E6DD017B8494423F4B0C7DF1776DC8B0 /* WalkVC.swift */,
+				74D6202369218E60B55B4EF039CA55EF /* WalkView.swift */,
+				11EC1BD0381A1B8B06526647EF844E01 /* Extensions */,
+				35C1EB26F85E9B9EDB520F49E94AEC7A /* Pod */,
+				FDE159A8C167EC263F09EF8FE79828C7 /* Support Files */,
+			);
+			name = iHAKWalk;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2200C0CDB70A86C67CB66F5B9010D9C5 /* Pods-ihakwalkExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				864AAB9738135465154ECC3867AAAF4D /* Info.plist */,
+				B87F75FBF927179CDEAF8DDFF02EAD2F /* Pods-ihakwalkExampleTests.modulemap */,
+				B61757AA672622D3B9C031ED7143F30E /* Pods-ihakwalkExampleTests-acknowledgements.markdown */,
+				ECCCF5F23E862DAB725EA30E2A027A29 /* Pods-ihakwalkExampleTests-acknowledgements.plist */,
+				52C39AA8645A1F0249693082C1022A45 /* Pods-ihakwalkExampleTests-dummy.m */,
+				9963F4BB96C4CD0783D70F6EAE04CC1D /* Pods-ihakwalkExampleTests-frameworks.sh */,
+				7D594FF566D57DB9ADC2ABC66E55F8DC /* Pods-ihakwalkExampleTests-resources.sh */,
+				6808D8AF541F017EB0D5C9671F1311DE /* Pods-ihakwalkExampleTests-umbrella.h */,
+				28003E46598A7A975C220F946F6B6418 /* Pods-ihakwalkExampleTests.debug.xcconfig */,
+				6AA7DC9CD5387596B5E7E8372AD1AB1D /* Pods-ihakwalkExampleTests.release.xcconfig */,
+			);
+			name = "Pods-ihakwalkExampleTests";
+			path = "Target Support Files/Pods-ihakwalkExampleTests";
+			sourceTree = "<group>";
+		};
+		35C1EB26F85E9B9EDB520F49E94AEC7A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF82AB5CCA03CC7D20531891891038 /* iHAKWalk.podspec */,
+				AC7406CD12CF9D6AB81EC6D59848D815 /* LICENSE */,
+				BBCF138A0DB547DB6FF7C68FA36F7A6D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FDA6F20A2C64CCBB687EE3085AC1043C /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BB2A897E483A26990E544F8B5934EE47 /* Products */,
+				87C0B96FF9E22D4C617F5769ECA6D82C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80F397A3DF3121965A5113DB935E3F58 /* Pods-ihakwalkExample */ = {
+			isa = PBXGroup;
+			children = (
+				FC1AF3BD95C77CCC19DBE47575E4638C /* Info.plist */,
+				C1BAD8BB4B2A34FF8C8203BE42305499 /* Pods-ihakwalkExample.modulemap */,
+				A9D77D7499C071D5620060A30D43CA0E /* Pods-ihakwalkExample-acknowledgements.markdown */,
+				61F8FB158FE098E13AEB9FAE6D93FF4F /* Pods-ihakwalkExample-acknowledgements.plist */,
+				99FF264230656DFEA50B96A101AB1619 /* Pods-ihakwalkExample-dummy.m */,
+				A999915B0CE8A57D6A8036A35A1B7BA7 /* Pods-ihakwalkExample-frameworks.sh */,
+				A1127887AB3E9843FFB6D8B868B8EA25 /* Pods-ihakwalkExample-resources.sh */,
+				42A226F5A46DEA73F67C3C0E83E862B2 /* Pods-ihakwalkExample-umbrella.h */,
+				834113E4DBEF66AEC2C0C6184270DBAB /* Pods-ihakwalkExample.debug.xcconfig */,
+				EF198EB58F6A304E041D9EFB6CE7B436 /* Pods-ihakwalkExample.release.xcconfig */,
+			);
+			name = "Pods-ihakwalkExample";
+			path = "Target Support Files/Pods-ihakwalkExample";
+			sourceTree = "<group>";
+		};
+		87C0B96FF9E22D4C617F5769ECA6D82C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				80F397A3DF3121965A5113DB935E3F58 /* Pods-ihakwalkExample */,
+				2200C0CDB70A86C67CB66F5B9010D9C5 /* Pods-ihakwalkExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BB2A897E483A26990E544F8B5934EE47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F48B26245619FAFAA532EB7DAF1BEA6D /* iHAKWalk.framework */,
+				B3854F87C8CA0C377DE80F4F290B8B9B /* Pods_ihakwalkExample.framework */,
+				DEE9E22D463ECC11F5DFEC1B73427B15 /* Pods_ihakwalkExampleTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDA6F20A2C64CCBB687EE3085AC1043C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B8C42D8F4CF60C309609326CD866115 /* iHAKWalk */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FDE159A8C167EC263F09EF8FE79828C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B70E99F0F2DDBB8287345F75E5D7700 /* iHAKWalk.modulemap */,
+				0E04C35B22D286D88BD60BD2123562D2 /* iHAKWalk.xcconfig */,
+				DE865073456A9B8C139256E325461759 /* iHAKWalk-dummy.m */,
+				2B84034759D995C6F7DC8DD63C47072A /* iHAKWalk-prefix.pch */,
+				7AE9835D1B3135B9E48675DBFC6B1AB1 /* iHAKWalk-umbrella.h */,
+				2A17E00E2D8CB4D9ECF9AE1D3FDC5237 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "ihakwalkExample/Pods/Target Support Files/iHAKWalk";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		03DDAB34B4BD35D18595AC7C9222A49F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542914BBE8F6AF437BB82FA17BF6BBFC /* Pods-ihakwalkExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D13F0880243CD358E97F34CDCF1CC3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D0FA914377E4DAF76A85E0ADA71385 /* iHAKWalk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC269D3263E2A9A450AAF0F93AAFF8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EABDDCF943C7A9D173E9C259EE57825 /* Pods-ihakwalkExampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AC4C4AFC1A29AAB3C7BB7DEF924B5669 /* Pods-ihakwalkExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09D038B98DA96416C3EBD9646463310 /* Build configuration list for PBXNativeTarget "Pods-ihakwalkExampleTests" */;
+			buildPhases = (
+				B47AE53B306C3AB55753878486C116FD /* Sources */,
+				41B85BF02F1C63AE46B1B7D28FA968C9 /* Frameworks */,
+				AAC269D3263E2A9A450AAF0F93AAFF8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85BE3FDD7873204CD93D83051F2916A2 /* PBXTargetDependency */,
+			);
+			name = "Pods-ihakwalkExampleTests";
+			productName = "Pods-ihakwalkExampleTests";
+			productReference = DEE9E22D463ECC11F5DFEC1B73427B15 /* Pods_ihakwalkExampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCA2E880FAC6C95CC0D7DC34574CE01A /* iHAKWalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80BBECBAB2065A22BDFE5758FBB64191 /* Build configuration list for PBXNativeTarget "iHAKWalk" */;
+			buildPhases = (
+				6B21D3D86D0D6937EBF516C5DEF51C2F /* Sources */,
+				02DA4E26D230184186C3DFA216CEF280 /* Frameworks */,
+				9D13F0880243CD358E97F34CDCF1CC3D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iHAKWalk;
+			productName = iHAKWalk;
+			productReference = F48B26245619FAFAA532EB7DAF1BEA6D /* iHAKWalk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9DFC6B01844D2A3016A4B9236FB02D3 /* Pods-ihakwalkExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5C94B3262271846C856968BE85C91E /* Build configuration list for PBXNativeTarget "Pods-ihakwalkExample" */;
+			buildPhases = (
+				8742DF6AFC94A970E2FAC748378BA0E8 /* Sources */,
+				8498669369BBB94735A71A587B49A81A /* Frameworks */,
+				03DDAB34B4BD35D18595AC7C9222A49F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3384A0D1FAEE14FCCB96F7DE23C65C26 /* PBXTargetDependency */,
+			);
+			name = "Pods-ihakwalkExample";
+			productName = "Pods-ihakwalkExample";
+			productReference = B3854F87C8CA0C377DE80F4F290B8B9B /* Pods_ihakwalkExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BB2A897E483A26990E544F8B5934EE47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCA2E880FAC6C95CC0D7DC34574CE01A /* iHAKWalk */,
+				D9DFC6B01844D2A3016A4B9236FB02D3 /* Pods-ihakwalkExample */,
+				AC4C4AFC1A29AAB3C7BB7DEF924B5669 /* Pods-ihakwalkExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B21D3D86D0D6937EBF516C5DEF51C2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D22F20D5578EA34701D0AED01FCAF26 /* iHAKWalk-dummy.m in Sources */,
+				7D96042D867C9E088B712BBDABBB0F5D /* UIColor+Image.swift in Sources */,
+				99503C499D275CA08141F4B2F7C1E7B0 /* WalkBGView.swift in Sources */,
+				4660F7B626549A7295492D7E277AB682 /* WalkSlider.swift in Sources */,
+				E576855CCD7818784A6403AAF419DBDA /* WalkVC.swift in Sources */,
+				106D0F90B82133DB558464511A59FE29 /* WalkView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8742DF6AFC94A970E2FAC748378BA0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F412EDEFDDC7819B78F2C29C01167A76 /* Pods-ihakwalkExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47AE53B306C3AB55753878486C116FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D822990C55582CD423E9805C7FB0D68 /* Pods-ihakwalkExampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3384A0D1FAEE14FCCB96F7DE23C65C26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iHAKWalk;
+			target = BCA2E880FAC6C95CC0D7DC34574CE01A /* iHAKWalk */;
+			targetProxy = 022B346F68B97D2FC5195D233E7740A3 /* PBXContainerItemProxy */;
+		};
+		85BE3FDD7873204CD93D83051F2916A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ihakwalkExample";
+			target = D9DFC6B01844D2A3016A4B9236FB02D3 /* Pods-ihakwalkExample */;
+			targetProxy = 4C7A9E624485F281CBB6D27133B9394A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A22E9DDD330421683FA52B251ABD8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF198EB58F6A304E041D9EFB6CE7B436 /* Pods-ihakwalkExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ihakwalkExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ihakwalkExample/Pods-ihakwalkExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		510C0DCFF3199500DD45DFF2B8E4270A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AA7DC9CD5387596B5E7E8372AD1AB1D /* Pods-ihakwalkExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ihakwalkExampleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ihakwalkExampleTests/Pods-ihakwalkExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8AD49B88AB15F467CBDC79885571EA21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E04C35B22D286D88BD60BD2123562D2 /* iHAKWalk.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iHAKWalk/iHAKWalk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iHAKWalk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iHAKWalk/iHAKWalk.modulemap";
+				PRODUCT_MODULE_NAME = iHAKWalk;
+				PRODUCT_NAME = iHAKWalk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C39EA2064584BBA3581887F614C6195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28003E46598A7A975C220F946F6B6418 /* Pods-ihakwalkExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ihakwalkExampleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ihakwalkExampleTests/Pods-ihakwalkExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD3346DA0398E8BD59020C3FDD49007E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E04C35B22D286D88BD60BD2123562D2 /* iHAKWalk.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iHAKWalk/iHAKWalk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iHAKWalk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iHAKWalk/iHAKWalk.modulemap";
+				PRODUCT_MODULE_NAME = iHAKWalk;
+				PRODUCT_NAME = iHAKWalk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F4FDABB505E2D62F21492D3DED8468E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 834113E4DBEF66AEC2C0C6184270DBAB /* Pods-ihakwalkExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ihakwalkExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ihakwalkExample/Pods-ihakwalkExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80BBECBAB2065A22BDFE5758FBB64191 /* Build configuration list for PBXNativeTarget "iHAKWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD49B88AB15F467CBDC79885571EA21 /* Debug */,
+				AD3346DA0398E8BD59020C3FDD49007E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09D038B98DA96416C3EBD9646463310 /* Build configuration list for PBXNativeTarget "Pods-ihakwalkExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C39EA2064584BBA3581887F614C6195 /* Debug */,
+				510C0DCFF3199500DD45DFF2B8E4270A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB5C94B3262271846C856968BE85C91E /* Build configuration list for PBXNativeTarget "Pods-ihakwalkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FDABB505E2D62F21492D3DED8468E8 /* Debug */,
+				3A22E9DDD330421683FA52B251ABD8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
