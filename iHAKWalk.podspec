@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iHAKWalk"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A customisable walkthrough view built on Swift that can be used  for banners and sliders."
                 
 
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
                    for app intros, banners or sliders as well.
                    DESC
 
-  s.homepage     = "https://github.com/iHAKWalk"
+  s.homepage     = "https://github.com/ihak/iHAKWalk"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -70,6 +70,7 @@ Pod::Spec.new do |s|
 
   #  When using multiple platforms
   s.ios.deployment_target = "11.4"
+  s.swift_version = "4.2"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
