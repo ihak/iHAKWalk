@@ -1,5 +1,5 @@
 PODS:
-  - iHAKWalk (0.0.1)
+  - iHAKWalk (0.0.3)
 
 DEPENDENCIES:
   - iHAKWalk (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  iHAKWalk: 63d00db30ecbe1659d3c6278a969d75cecfc9c74
+  iHAKWalk: b9bb38f21d0f58693f1628afd153dd45fe595c19
 
 PODFILE CHECKSUM: 75e591d31821603455bfca732d5c2f61960eb276
 

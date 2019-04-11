@@ -1,9 +1,9 @@
 {
   "name": "iHAKWalk",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "A customisable walkthrough view built on Swift that can be used  for banners and sliders.",
   "description": "A customisable walkthrough view built on Swift that can be used\nfor app intros, banners or sliders as well.",
-  "homepage": "https://github.com/iHAKWalk",
+  "homepage": "https://github.com/ihak/iHAKWalk",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -14,9 +14,10 @@
   "platforms": {
     "ios": "11.4"
   },
+  "swift_version": "4.2",
   "source": {
     "git": "https://github.com/ihak/iHAKWalk.git",
-    "tag": "0.0.1"
+    "tag": "0.0.3"
   },
   "source_files": "iHAKWalk/**/*.swift",
   "requires_arc": true

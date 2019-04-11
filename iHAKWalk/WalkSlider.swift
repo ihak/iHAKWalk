@@ -274,7 +274,7 @@ public class WalkSlider: UIView {
 }
 
 extension WalkSlider: UIScrollViewDelegate {
-    private func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print(scrollView.contentOffset)
         guard scrollView.bounds.width > 0 else {
             print("Error: Scrollview width is <= zero.")
