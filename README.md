@@ -17,11 +17,17 @@ A customisable walkthrough view built on Swift that can be used for app intros o
 - Supports background parallax.
 - Can be displayed using built-in VC or can be directly added in any of your own view.
 
-## Installation
+## Inspiration
+
+This project drives its inspiration from several other wonderful projects present on GitHub. Most of the projects that I explored were written in Obj-C and were very old. So I wrote this project in Swift and tried to incoporate all the good features of them.
+
+* [ABCIntroView](https://github.com/AdamBCo/ABCIntroView)
+* [Surfboard](https://github.com/MosheBerman/Surfboard)
+* [GHWalkThrough](https://github.com/GnosisHub/GHWalkThrough)
 
 ## Example Project
 
-Example project contains a list of various types of intro views aka walks or walkthroughs. This list also contains walkthroughs inpired by various github projects and are listed in the inspiration section.
+Example project contains a list of various types of intro views aka walks or walkthroughs. This list also contains walkthroughs inpired by various github projects and are listed in the [inspiration section](#inspiration).
 
 ## Requirements
 
