@@ -45,6 +45,24 @@ This project drives its inspiration from several other wonderful projects presen
 |-|-|-|
 | ![ghwalkthrough-1](https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-7.png) | ![ghwalkthrough-2](https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-8.png) | ![ghwalkthrough-3](https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-9.png) |
 
+### With Paralax
+
+| | | |
+|-|-|-|
+| ![bgparalax-1](https://github.com/ihak/iHAKWalk/raw/master/screenshots/paralax-bg-1.png) | ![bgparalax-2](https://github.com/ihak/iHAKWalk/raw/master/screenshots/paralax-bg-2.png) | ![bgparalax-3](https://github.com/ihak/iHAKWalk/raw/master/screenshots/paralax-bg-3.png) |
+
+### With Blurred Background
+
+| |
+|-|
+| ![blurredbg-1](https://github.com/ihak/iHAKWalk/raw/master/screenshots/blurred.png) |
+
+### Banner
+
+| | |
+|-|-|
+| ![banner-1](https://github.com/ihak/iHAKWalk/raw/master/screenshots/banner.png) | ![banner-2](https://github.com/ihak/iHAKWalk/raw/master/screenshots/banner-tapped.png) | 
+
 
 ## Example Project
 
