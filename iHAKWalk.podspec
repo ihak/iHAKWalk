@@ -31,8 +31,15 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/ihak/iHAKWalk"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
+  s.screenshots  = "https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-1.png",
+                    "https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-2.png",
+                    "https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-3.png",
+                    "https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-4.png",
+                    "https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-5.png",
+                    "https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-6.png",
+                    "https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-7.png",
+                    "https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-8.png",
+                    "https://github.com/ihak/iHAKWalk/raw/master/screenshots/inspiration-9.png"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
