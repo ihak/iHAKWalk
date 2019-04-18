@@ -124,11 +124,11 @@ Initializer also supports a configuration block that allows you to style the tit
 
 ```Swift
 let walk1 = WalkView(descriptionText: "Welcome to Surfboard.", image: UIImage(named: "iPhone"), sequence: [.description, .image, .title]) { (walkView, _, description, imageView) in
-            description?.font = UIFont(name: "AvenirNext-Regular", size: 17.0)
-            description?.textColor = .white
-            description?.layoutMargins = UIEdgeInsets(top: 0.0, left: 30.0, bottom: 0.0, right: 30.0)
-            imageView?.tintColor = .white
-        }
+    description?.font = UIFont(name: "AvenirNext-Regular", size: 17.0)
+    description?.textColor = .white
+    description?.layoutMargins = UIEdgeInsets(top: 0.0, left: 30.0, bottom: 0.0, right: 30.0)
+    imageView?.tintColor = .white
+}
 ```
 
 #### Add custom spacing between controls
@@ -136,8 +136,8 @@ By default the controls are equally separated. If you want more spacing after a 
 
 ```Swift
 let walk1 = WalkView(descriptionText: "Welcome to Surfboard.", image: UIImage(named: "iPhone"), sequence: [.description, .image, .title]) { (walkView, _, description, imageView) in
-            walkView.addCustomSpacing(spacing: 20.0, after: description!)
-        }
+    walkView.addCustomSpacing(spacing: 20.0, after: description!)
+}
 ```
 
 #### Tap Gesture
@@ -149,8 +149,64 @@ walk1.configureTap { (walkView) in
     alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
     navigationController.present(alertVC, animated: true, completion: nil)
 }
+```
+
+### BGWalkView
+A view that works as a background view for individual WalkView(s) as well as for the whole component. It supports an image or a color. Also provides paralax effect and blur.
+
+#### Initialization
+Can be initialized using image or color, optional `WalkView` and optional background type.
+
+```Swift
+let walk1 = WalkView(title: "This is page 1", descriptionText: "Lorem ipsum dolor sit amet.", image: UIImage(named: "ghw-title-1"), sequence: [.image, .title, .description]) { (walkView, title, description, imageView) in
+    title?.font = UIFont.boldSystemFont(ofSize: 25)
+    walkView.addCustomSpacing(spacing: 20.0, after: imageView!)
+    walkView.addCustomSpacing(spacing: 15.0, after: title!)
+}
+
+let milestone1 = WalkBGView(image: UIImage(named: "14"), walkView: walk1)
+```
+
+If WalkView is provided, it displays it on top of the background image. 
+
+#### Changing Background Types
+`BackgroundType` supports two values, `normal` and `parallax`. For `parallax` the image used should be of right dimensions otherwise it won’t work correctly. For further details please check the example project.
+
+```Swift
+let walk1 = WalkBGView(image: UIImage(named: "bg_wide_3"), walkView: WalkView(title: "Title 1", descriptionText: "Description for title 1.", image: UIImage(named: "title2")), type: .paralax)
+```
+
+For parallax configuration check  the summary of `initialOffset` and `parallaxDelta` variables.
+
+#### Adding Blur Effect
+Background can be blurred by calling `addBlur` method on the instance. You can configure the amount of blur you want.
+
+```Swift
+let background = WalkBGView(image: UIImage(named: "2"))
+background.addBlur(style: .light)
+```
+
+#### Adding Overlay
+WalkBGView also supports an overlay on the background image. Its intensity and opacity can be configured via `UIColor` parameter. If you don't provide any color, it will add an overlay with default values.
+
+```Swift
+let background = WalkBGView(image: UIImage(named: "2"))
+background.addOverlay()
+```
+
+#### Configuring Tap
+You can pass a block to be called when WalkBGView is tapped. 
+```Swift
+let background = WalkBGView(image: UIImage(named: "2"))
+background.configureTap { (_) in
+    let alertVC = UIAlertController(title: "Title 1", message: "View 1 tapped.", preferredStyle: .alert)
+    alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+    navigationController.present(alertVC, animated: true, completion: nil)
+}
 
 ```
+Warning: If you have initialized WalkBGView using a WalkView then use WalkView’s method to call the block since WalkBGView will be obscured by the WalkView.
+
 ## Author
 
 Hassan Ahmed Khan, hassandotahmed@gmail.com
