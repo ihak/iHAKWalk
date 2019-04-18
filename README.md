@@ -205,7 +205,71 @@ background.configureTap { (_) in
 }
 
 ```
-Warning: If you have initialized WalkBGView using a WalkView then use WalkView’s method to call the block since WalkBGView will be obscured by the WalkView.
+*⚠️Warning: If you have initialized WalkBGView using a WalkView then use WalkView’s method to call the block since WalkBGView will be obscured by the WalkView.*
+
+### WalkSlider
+A view that takes WalkView and WalkBGView and layout the slider accordingly. WalkSlider identifies different views as milestones.
+
+#### Initialization
+
+Initializer takes an optional `WalkBGView` as background view and an array of either `WalkView(s)` or `WalkBGView(s)`. If you want a fixed background for every view, then you can provide the background and an array of `WalkView` instances.  But if you want separate backgrounds then create `WalkBGView(s)` initializing them with `WalkView` objects.
+
+```Swift
+// Initialize WalkView(s)
+let walk1 = WalkView(descriptionText: "Welcome to Surfboard.", image: UIImage(named: "iPhone")) { (walkView, _, description, imageView)
+        
+let walk2 = WalkView(descriptionText: "Surfboard makes it delightfully easy to craft onboarding experiences.", image: UIImage(named: "surfer"))
+
+let walk3 = WalkView(descriptionText: "You provide an array of panels and Surfboard figures out the rest.", image: UIImage(named: "panels"))
+        
+let walk4 = WalkView(descriptionText: "See the documentation on GitHub for more information.", image: UIImage(named: "github"))
+        
+let walk5 = WalkView(descriptionText: "If you like Surfboard give me a shoutout on Twitter. I'm @bermaniasstudios.", image: UIImage(named: "twitter"))
+
+// Initialize WalkBGView that will be used as the slider background.
+let bgView = WalkBGView(color: UIColor(red: 12.0/256.0, green: 18.0/256.0, blue: 148.0/256.0, alpha: 1.0))
+
+// Finally initialize the WalkSlider with background and milestones.
+let walkslider = WalkSlider(backgroundView: bgView, milestones: [walk1, walk2, walk3, walk4, walk5])
+```
+
+#### Adding Skip and PageControl
+
+Skip button and page control are optional. You can add them and also hide them as desired. 
+
+```Swift
+walkslider.addSkipButton()
+walkslider.addPageControl()
+```
+
+#### Configuring Skip and PageControl
+Both components can be configured using their respective configure methods.
+
+```Swift
+walkSlider.configureSkipButton { (button) in
+    button.backgroundColor = UIColor(red: 0.129, green: 0.588, blue: 0.953, alpha: 1.0)
+    button.setTitle("Let's Go", for: .normal)
+    button.contentEdgeInsets = .init(top: 10.0, left: 30.0, bottom: 10.0, right: 30.0)
+    button.layer.cornerRadius = 5.0
+    button.widthAnchor.constraint(equalTo: walkSlider.widthAnchor).isActive = true
+    button.heightAnchor.constraint(equalTo: button.widthAnchor, multiplier: 0.15).isActive = true
+}
+
+walkSlider.configurePageControl { (pageControl) in
+    pageControl.currentPageIndicatorTintColor = UIColor(red: 0.129, green: 0.588, blue: 0.953, alpha: 1.0)
+}
+
+```
+
+### WalkVC
+`WalkVC` is a convenience UIViewController that takes `WalkSlider` object. Can be added as a child controller or as a root view controller in a navigation. WalkSlider can be used directly if you want to add it as a view. But if you want to present it in a navigation WalkVC is a handy wrapper class to display it.
+
+```Swift
+let walkVC = WalkVC(walkSlider: walkSlider)
+let navigationController = UINavigationController(rootViewController: walkVC)
+navigationController.isNavigationBarHidden = true
+self.present(navigationController, animated: true , completion: nil)
+```
 
 ## Author
 
