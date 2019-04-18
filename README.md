@@ -103,6 +103,54 @@ Then, run the following command:
 $ pod install
 ```
 
+## Get Started
+### WalkView
+
+WalkView is one of the basic component. It takes title, description, image and their particular order in which they are shown. Everything is optional so you can initialise an instance of WalkView that only shows image, title or description or a combination of these.
+
+```Swift
+let walk = WalkView(title: "Title 1", descriptionText: "Description for title 1.", image: UIImage(named: "title1"))
+```
+
+#### Changing the order
+The order of title, image and description can be changed at the time of initialization by providing the desired sequence in the sequence array. The default sequence is title, description, image. If want the default sequence, just remove the sequence attribute from the initializer.
+
+```Swift
+let walk = WalkView(title: "Title 1", descriptionText: "Description for title 1.", image: UIImage(named: "title1"), sequence: [.title, .image, .description])
+```
+
+#### Initialization with optional configuration block
+Initializer also supports a configuration block that allows you to style the title, description and image as you choose.
+
+```Swift
+let walk1 = WalkView(descriptionText: "Welcome to Surfboard.", image: UIImage(named: "iPhone"), sequence: [.description, .image, .title]) { (walkView, _, description, imageView) in
+            description?.font = UIFont(name: "AvenirNext-Regular", size: 17.0)
+            description?.textColor = .white
+            description?.layoutMargins = UIEdgeInsets(top: 0.0, left: 30.0, bottom: 0.0, right: 30.0)
+            imageView?.tintColor = .white
+        }
+```
+
+#### Add custom spacing between controls
+By default the controls are equally separated. If you want more spacing after a particular control you can adjust it in the configuration block.
+
+```Swift
+let walk1 = WalkView(descriptionText: "Welcome to Surfboard.", image: UIImage(named: "iPhone"), sequence: [.description, .image, .title]) { (walkView, _, description, imageView) in
+            walkView.addCustomSpacing(spacing: 20.0, after: description!)
+        }
+```
+
+#### Tap Gesture
+You can execute a block of code when a user taps on a particular page using `configureTap` method.
+
+```Swift
+walk1.configureTap { (walkView) in
+    let alertVC = UIAlertController(title: "Title 1", message: "View 1 tapped.", preferredStyle: .alert)
+    alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+    navigationController.present(alertVC, animated: true, completion: nil)
+}
+
+```
 ## Author
 
 Hassan Ahmed Khan, hassandotahmed@gmail.com
