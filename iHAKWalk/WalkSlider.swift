@@ -12,6 +12,7 @@ import UIKit
  *  A protocol that provides scrollview related updates
  *  to the interested views.
  */
+@MainActor
 protocol SliderDelegate {
     func didContentOffsetChange(contentOffset: Double)
 }
