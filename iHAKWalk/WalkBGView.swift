@@ -13,6 +13,7 @@ import UIKit
  *  as well as for the whole component. It supports an image or a
  *  color. Also provides paralax effect and blur.
  */
+@MainActor
 public class WalkBGView: UIView {
     public enum BackgroundType {
         case normal, paralax

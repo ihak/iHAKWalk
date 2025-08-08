@@ -8,6 +8,7 @@
 
 import UIKit
 
+@MainActor
 public class WalkVC: UIViewController {
     var walkSlider: WalkSlider!
     

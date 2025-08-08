@@ -20,6 +20,7 @@ protocol SliderDelegate {
  *  A view that takes WalkView and WalkBGView and layout
  *  the slider accordingly.
  */
+@MainActor
 public class WalkSlider: UIView {
     private lazy var pageControl = UIPageControl(frame: .zero)
     private lazy var scrollView = UIScrollView(frame: .zero)

@@ -13,6 +13,7 @@ import UIKit
  *  checkout the methods exposed by this class.
  */
 
+@MainActor
 public class WalkView: UIView {
     private var title: String?
     private var descriptionText: String?
