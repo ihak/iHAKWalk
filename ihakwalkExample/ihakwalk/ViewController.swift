@@ -9,6 +9,7 @@
 import UIKit
 import iHAKWalk
 
+@MainActor
 class ViewController: UIViewController {
     let CellIdentifier = "ExampleCell"
     

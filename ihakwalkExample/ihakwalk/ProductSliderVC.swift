@@ -9,6 +9,7 @@
 import UIKit
 import iHAKWalk
 
+@MainActor
 class ProductSliderVC: UIViewController {
 
     override func viewDidLoad() {
